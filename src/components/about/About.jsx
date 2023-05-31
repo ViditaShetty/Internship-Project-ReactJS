@@ -67,6 +67,7 @@ const About = (props) => {
                 <div className="skills__bar">
                   <span className="skills__percentage percent1"></span>
                 </div>
+                <br/><br/><br/><br/><br/><br/><br/>
               </div>
             </div>
           </div>)

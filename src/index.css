@@ -68,6 +68,18 @@ body,button,input,textarea{
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 
+  /**TO DIABLE TEXT SELECTION AND HIGHLIGHT WHEN CLCKING ON ANYTHIN*/
+  -ms-user-select: none;
+
+  -moz-user-select: none;
+
+  -webkit-user-select: none;
+
+  -webkit-touch-callout: none;
+
+  -khtml-user-select: none;
+
+  user-select: none;
 }
 
 body{

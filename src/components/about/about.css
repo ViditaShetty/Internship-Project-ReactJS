@@ -31,7 +31,10 @@
 .skills__titles{
     display: flex;
     justify-content: space-between;
-    margin-top:10%;
+    margin-top: 9%;
+    padding: 10px;
+    border-radius: 22px;
+    background-color: #dfdde6;
 }
 
 .skills__name{
@@ -45,16 +48,15 @@
 }
 
 .skills__bar,.skills__percentage{
-    height: 3px;
-    width: 10%;
-    margin-top: -3%;
+    min-height: 20px;
+    max-width: 20px;
+    margin-top: -8%;
     margin-left: -11%;
     border-radius: 43.25rem;
-
 }
 
 .skills__bar{
-    background-color: rgb(250, 239, 218);
+    background-color: inherit   ;
 }
 
 .skills__percentage{
@@ -73,7 +75,7 @@
 
 .percent3{
     width: 100%;
-    background-color:hsl(219deg 61% 65% / 80%);
+    background-color:hsl(219deg 61% 65% / 70%);
 }
 
 .percent4{

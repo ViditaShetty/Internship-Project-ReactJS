@@ -16,13 +16,18 @@ const InfoOne = () => {
     const tableRef = useRef(null);
     const columns = [
         { field: "id", headerName: "id", width: 20 },
-        { field: "pay", headerName: "MODE OF PAYMENT", width: 200 },
-        { field: "amt",headerName: "AMOUNT",width: 200,},
-        { field: "chq", headerName: "DD/CHQ IN FAVOUR OF", width: 200 },
-        { field: "require", headerName: "ADVANCE REQUIREMENT", width: 200 },
-        {field: "date", headerName: "TILL DATE (dd/mm/yyyy)",width: 200, },
-        {field: "chqNo", headerName: "CHEQUE NO.",width: 160,},
-        {field: "remark", headerName: "REMARKS",width: 200,},
+        { field: "jan", headerName: "JAN", width: 200 },
+        { field: "feb",headerName: "FEB",width: 200,},
+        { field: "mar", headerName: "MAR", width: 200 },
+        { field: "apr", headerName: "APRIL", width: 200 },
+        {field: "may", headerName: "MAY",width: 200, },
+        {field: "jun", headerName: "JUNE",width: 160,},
+        {field: "jul", headerName: "JUL",width: 200,},
+        {field: "aug", headerName: "AUG",width: 200,},
+        {field: "sep", headerName: "SEP",width: 200,},
+        {field: "oct", headerName: "OCT",width: 200,},
+        {field: "nov", headerName: "NOV",width: 200,},
+        {field: "dec", headerName: "DEC",width: 200,},
         {field: "action2", headerName: "Actions",width: 200,
           renderCell: (params) => {
             return (<>
@@ -31,14 +36,20 @@ const InfoOne = () => {
                 </Link></>);},},];
 
     const data=[{
-            id:1,
-            pay: "Cheque",
-            amt: "10,000",
-            chq: "alembic pharma",
-            require: "None",
-            date: "	12/05/23",
-            chqNo: "1230007",
-            remark:"None" },]
+            id:"1",
+            jan:"Ajmer",
+            feb:"Bihar",
+            mar: "Chennai",
+            apr: "Delhi",
+            may: "Ajmer",
+            jun: "Chennai",
+            jul: "Bihar",
+            aug:"Delhi" ,
+            sep:"Bihar",
+            oct: "Ajmer",
+            nov: "Delhi",
+            dec: "Chennai",
+            },]
 
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -52,7 +63,7 @@ const InfoOne = () => {
 
      <div className='general' style={{maxWidth:"70vw"}} id="payment">
       <i className="icon-grid"></i>
-       {'\u00A0'}{'\u00A0'}PAYMENT DETAIL (to be filled by marketing services department)
+       {'\u00A0'}{'\u00A0'}ROI TRACKING
         <div className="userShow ">
          <DataGrid
             rows={data}
@@ -74,39 +85,62 @@ const InfoOne = () => {
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description">
-        <Box sx={{position: 'absolute', top: '50%',left: '50%',transform: 'translate(-50%, -50%)',width: 400,bgcolor: 'background.paper',border: '1px solid darkblue',boxShadow: 24,p: 4,}}>
+        <Box sx={{position: 'absolute', top: '50%',left: '50%',transform: 'translate(-50%, -50%)',width:800,bgcolor: 'background.paper',border: '1px solid darkblue',boxShadow: 24,p: 4,}}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             Add Record
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-          <form className="addProductForm">
+          <form className="addProductForm" style={{display:"flex"}}>
                 <div className="column_one">
-                    <div className="addProductItem">
-                    <label>MODE OF PAYMENT</label>
+                    <div className="addProductItem" >
+                    <label>JAN ROI</label>
                     <input type="text" placeholder="" onChange={handleCat} />
                     </div>
                     <div className="addProductItem">
-                    <label>AMOUNT</label>
+                    <label>FEB ROI</label>
                     <input type="text" placeholder="" onChange={handleCat} />
                     </div>
                     <div className="addProductItem">
-                    <label>DD/CHQ IN FAVOUR OF</label>
+                    <label>MARCH ROI</label>
                     <input type="text" placeholder="" onChange={handleCat} />
                     </div>
                     <div className="addProductItem">
-                    <label>ADVANCE REQUIREMENT</label>
+                    <label>APRIL ROI</label>
                     <input type="text" placeholder="" onChange={handleCat} />
                     </div>
                     <div className="addProductItem">
-                    <label>TILL DATE(dd/mm/yyyy)</label>
+                    <label>MAY ROI</label>
                     <input type="text" placeholder="" onChange={handleCat} />
                     </div>
                     <div className="addProductItem">
-                    <label>CHEQUE NO.</label>
+                     <label>JUNE ROI</label>
+                    <input type="text" placeholder="" onChange={handleCat} />
+                    </div>
+                </div>
+
+                <div className='column_two'>
+                    <div className="addProductItem">
+                    <label>JULY ROI</label>
                     <input type="text" placeholder="" onChange={handleCat} />
                     </div>
                     <div className="addProductItem">
-                    <label>REMARKS</label>
+                    <label>AUG ROI</label>
+                    <input type="text" placeholder="" onChange={handleCat} />
+                    </div>
+                    <div className="addProductItem">
+                    <label>SEPTEMBER ROI</label>
+                    <input type="text" placeholder="" onChange={handleCat} />
+                    </div>
+                    <div className="addProductItem">
+                    <label>OCT ROI</label>
+                    <input type="text" placeholder="" onChange={handleCat} />
+                    </div>
+                    <div className="addProductItem">
+                    <label>NOVEMBER ROI</label>
+                    <input type="text" placeholder="" onChange={handleCat} />
+                    </div>
+                    <div className="addProductItem">
+                    <label>DECEMBER ROI</label>
                     <input type="text" placeholder="" onChange={handleCat} />
                     </div>
                     <br/>
@@ -120,62 +154,6 @@ const InfoOne = () => {
       </Modal>
         </div>
      </div>
-
-
-         {/*<!--===============================PART 2 ======================--!> */}
-
-     <div className='general' style={{maxWidth:"70vw"}} id="supporting">
-      <i className="icon-grid"></i>
-       {'\u00A0'}{'\u00A0'}SUPPORTING DOCUMENTS
-
-       <div className="userShow ">
-        <form className="addProductForm">
-
-        <div className="column_one">
-            <div className="addProductItem">
-            <label>LIST OF ATTACHED DOCUMENTS</label>
-            <input type="text" placeholder="" onChange={handleCat} /><br/>
-            <input type="text" placeholder="" onChange={handleCat} /><br/>
-            <input type="text" placeholder="" onChange={handleCat} /><br/>
-            </div>
-           
-        </div>
-        <div className="column_two">
-             <div className="addProductItem">
-            <label>LIST OF PENDING DOCUMENTS</label>
-            <input type="text" placeholder="" onChange={handleCat} /><br/>
-            <input type="text" placeholder="" onChange={handleCat} /><br/>
-            <input type="text" placeholder="" onChange={handleCat} /><br/>
-            </div>
-        </div>
-        </form>
-        <button className="addProductButton" style={{display:'block'}}>
-                        {'\u00A0'}{'\u00A0'} <a href="#supporting" style={{color:"white"}} > Update {'\u00A0'}{'\u00A0'}    </a>{'\u00A0'}{'\u00A0'}
-        </button>
-
-        </div>
-     </div>
-     
-              {/*<!--===============================PART 3 ======================--!> */}
-    <div className='general' style={{maxWidth:"100vw"}}>
-    <i className="icon-grid"></i>
-       {'\u00A0'}{'\u00A0'}REMARKS
-
-       <div className="userShow ">
-        <form className="addProductForm">
-
-        <div className="column_one">
-            <div className="addProductItem">
-            <label>REMARKS</label>
-            <input type="text" placeholder="" onChange={handleCat} style={{width:"100%",minHeight:"100px"}}/><br/>
-            </div> 
-            <button className="addProductButton" style={{display:'block'}}>
-                        {'\u00A0'}{'\u00A0'} <a href="#supporting" style={{color:"white"}} > Modify {'\u00A0'}{'\u00A0'}    </a>{'\u00A0'}{'\u00A0'}
-            </button>  
-        </div>
-        </form>
-        </div>
-    </div>
 
     </div>
   )

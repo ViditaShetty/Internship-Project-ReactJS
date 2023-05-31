@@ -30,8 +30,8 @@ const Sidebar = () => {
         <img src={LogoAlembic} alt=""/>
       </a>
 
-      <nav className='nav'>
-        <div className="nav__menu">
+      <nav className='nav' style={{position:"absolute",top: "18%"}}>
+        <div className="nav__menu" >
           <ul className="classList">
             <li className="navItem" onClick={handleHome}><a href="#home" className="nav__link"><i className="icon-home"></i></a>Home</li>
             <li className="navItem" onClick={handleSignOut}><a href="#portfolio" className="nav__link"><i className="icon-layers"></i></a>SignOut</li>
@@ -46,7 +46,7 @@ const Sidebar = () => {
         </div>
       </nav>
           {user && 
-            (<div style={{marginTop:"-118%",color:"var(--first-color)"}}>
+            (<div style={{marginTop:"400%",color:"var(--first-color)"}}>
               Sutanu Dutta.<br/>
               29/05/2023
             <br/><br/><br/><br/>
