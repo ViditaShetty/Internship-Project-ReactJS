@@ -1,0 +1,114 @@
+
+.about__container{
+    grid-template-columns: 5fr 5fr;
+    column-gap: 12.875rem;
+}
+
+.about__data{
+    margin-top:36%;
+    padding: 1.875rem;
+    /*background-color: wheat;
+    box-shadow:4px 6px 11px #e8bebed6;
+    border-radius: var(--border-radius);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 9fr 4fr;
+    column-gap: 1.875rem;
+    align-items: flex-start;
+    position: relative;*/
+}
+
+
+
+.about__description{
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.about__skills{
+    row-gap: 1.25rem;;
+}
+
+.skills__titles{
+    display: flex;
+    justify-content: space-between;
+    margin-top:10%;
+}
+
+.skills__name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+
+}
+
+.skills__number{
+    line-height: 1.2;
+}
+
+.skills__bar,.skills__percentage{
+    height: 3px;
+    width: 10%;
+    margin-top: -3%;
+    margin-left: -11%;
+    border-radius: 43.25rem;
+
+}
+
+.skills__bar{
+    background-color: rgb(250, 239, 218);
+}
+
+.skills__percentage{
+    display: block;
+}
+
+.percent1{
+    width: 100%;
+    background-color: hsl(219deg 61% 65% / 30%);
+}
+
+.percent2{
+    width: 100%;
+    background-color:hsl(219deg 61% 65% / 50%);
+}
+
+.percent3{
+    width: 100%;
+    background-color:hsl(219deg 61% 65% / 80%);
+}
+
+.percent4{
+    width: 100%;
+    background-color:hsl(219deg 61% 65% / 100%);
+}
+
+.about__boxes {
+    grid-template-columns: repeat(3,1fr);
+   column-gap: 3rem;
+    margin-top: 3.25rem;
+    justify-content: space-evenly;
+}
+
+.about__box{
+    display: flex;
+    column-gap: 1.5rem;
+    justify-content: flex-end;
+}
+
+
+.about__icon{
+    font-size:var(--h1-font-size);
+    color:hsl(353,100%,65%);
+}
+
+.about__title{
+    font-size: 1.875rem;
+}
+
+.section__title{
+    justify-content: center;
+    display: flex;
+}
+
+h3{
+    cursor: pointer;
+}

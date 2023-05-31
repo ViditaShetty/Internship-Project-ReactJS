@@ -1,0 +1,42 @@
+.Tab{
+    margin-left:152px;/*width of side nav*/
+    box-shadow:var(--shadow);
+    background-color: rgba(255, 255, 255, 0.779);
+    color: var(--text-color);
+}
+
+.Tab_list{
+    display: flex;
+    display: flex;
+    color: rgb(82, 82, 82);
+    max-height:15vh;
+}
+
+.Tab_list_item{
+    margin-bottom:0%;
+    margin: 0% 4%;
+    cursor:pointer;
+}
+
+.title{
+    margin-left: 3%;
+    margin-top: 1%;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom:1%;
+}
+
+
+.Tab_list_item_selected{
+    margin-bottom:0%;
+    margin: 0% 4%;
+    cursor:pointer;
+    
+    color: hsl(258, 82%, 33%);
+    text-underline-position: left;
+    text-decoration: 3px underline;
+    font-weight: 700;
+    text-underline-offset: 12px;
+    border-radius: 100%;
+    margin-bottom: 0.5%;
+}
