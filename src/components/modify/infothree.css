@@ -13,13 +13,15 @@
   
   }
   
-  .addProductForm {
+  .addProductForm3 {
     margin-top: 10px;
     display: flex;
+    
+    flex-direction: column;
   }
   
   .addProductItem {
-    width: 291px;
+    width: 310px;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -83,3 +85,21 @@
   .column_one, .column_two , .column_three{
     margin-right: 19%
   }
+
+  .column_of_three{
+    display: flex;
+  }
+
+  .column_of_three > .addProductItem{
+    margin-right: 44px;
+    margin-bottom: 20px;
+  }
+
+    
+  .addProductItem {
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  

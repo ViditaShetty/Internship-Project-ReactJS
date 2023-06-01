@@ -1,26 +1,29 @@
 import React from 'react';
 import './infoone.css';
 import { useState,useRef,useEffect } from "react";
-import { DataGrid } from "@mui/x-data-grid";
-import { Link } from 'react-router-dom';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
 import alanBtn from '@alan-ai/alan-sdk-web';
 
 
 const InfoTwo = () => {  
+   var questionNum=34;
+   var answer=34;
    const[format2,setFormat2]=useState(['','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','']);
-    const ALAN_KEY=`85a6b036ed0de194225179d1669074772e956eca572e1d8b807a3e2338fdd0dc/stage`
+    const ALAN_KEY=`85a6b036ed0de194225179d1669074772e956eca572e1d8b807a3e2338fdd0dc/stage`;
     useEffect(() => {
       alanBtn({
-          key: ALAN_KEY,
+          key: '85a6b036ed0de194225179d1669074772e956eca572e1d8b807a3e2338fdd0dc/stage',
           onCommand: (commandData) => {
-           if(commandData.command==='answer'){
+           if(commandData.command==='feedback'){
             //setFormat2(...format2,commandData.data)
-            format2[commandData.answerNum]=commandData.data;
+            questionNum=commandData.value.value;
            }
-           console.log(commandData)
+
+           if(commandData.command==='feedbak'){
+            //setFormat2(...format2,commandData.data)
+            answer=commandData.value.value;
+            format2[questionNum]=answer;
+           }
+
           }
       });
     }, []);

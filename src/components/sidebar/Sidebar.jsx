@@ -23,6 +23,7 @@ const Sidebar = () => {
     navigate('/')
   }
 
+  const d= new Date();
 
   return (
     <aside className='aside'>
@@ -48,7 +49,7 @@ const Sidebar = () => {
           {user && 
             (<div style={{marginTop:"400%",color:"var(--first-color)"}}>
               Sutanu Dutta.<br/>
-              29/05/2023
+              {d.getDate()}.{d.getMonth()}.{d.getFullYear()}
             <br/><br/><br/><br/>
             </div>
             )}
