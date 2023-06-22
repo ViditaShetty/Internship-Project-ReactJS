@@ -89,7 +89,7 @@ export const userData = [
         Place: "INDIA",
         Event:"Conference",
         Days:"365",
-        participants:"500",
+        participants:"300",
         amount:"0"
     },
     {
