@@ -25,6 +25,7 @@
     color:white;;
     font-weight: var(--font-bold);
     transition:.3s;
+    margin-right: 8px;
 }
 
 .nav__link:hover{

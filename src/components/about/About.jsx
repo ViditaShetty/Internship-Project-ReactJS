@@ -15,7 +15,7 @@ const About = (props) => {
               {props.individualProp &&(
                 <>
                 <div className="skills__titles">
-                  <h3 className="skills__name ">MSS - Entry</h3>
+                  <h3 className="skills__name " onClick={()=>navigate("/mssentry")}>MSS - Entry</h3>
                 </div>
                 <div className="skills__bar">
                   <span className="skills__percentage percent1"></span>

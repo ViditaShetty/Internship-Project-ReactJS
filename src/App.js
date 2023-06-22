@@ -12,6 +12,9 @@ import {
 } from "react-router-dom";
 import GroupMss from "./components/groupmss/GroupMss"
 import Modify from './components/modify/Modify';
+import MssEntry from './components/mssentry/MssEntry';
+import MssInfoOne from './components/mssentry/MssInfoOne';
+
 
 function App() {
   return (
@@ -20,7 +23,9 @@ function App() {
         <Route exact path="/" element={<Login />}/>
         <Route path="/home" element={<Home />} />
         <Route path="/groupmss" element={<GroupMss />} />
+        <Route path="/mssentry" element={<MssEntry />} />
         <Route path="/modify" element={<Modify />} />
+        <Route path="/mssinfoOne" element={<MssInfoOne />} />
       </Routes>
     </Router>
       );

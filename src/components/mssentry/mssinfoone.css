@@ -1,0 +1,142 @@
+.newProduct {
+    flex: 4 ;
+    margin-left: 12%;
+    margin:2% 0% 6% 12%;
+  
+    
+    background: white;
+    max-width: 50vw;
+    padding: 30px;
+    margin: 3% 20%;
+  
+    box-shadow:var(--shadow)
+  
+  }
+  
+  .addProductForm {
+    margin-top: 10px;
+    display: flex;
+  }
+  
+  .addProductItem {
+    width: 291px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .addProductItem > label {
+    color: gray;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .addProductItem > input {
+    padding: 4px;
+  }
+  
+  .addProductItem > select {
+    padding: 10px;
+  }
+  
+  .addProductButton {
+    margin-top: 10px;
+    padding: 8px 10px;
+    border: none;
+    background-color: rgb(56, 56, 188);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 22px;
+  }
+  
+  input[type="radio"]{
+    
+    transform: scale(1.3);
+    margin-right: 5px;
+  }
+  
+  
+  .newProduct:nth-child(2) {
+    flex: 4 ;
+    margin-left: 12%;
+    margin:2% 0% 6% 12%;
+  
+    background: white;
+    max-width: 100vw;
+    padding: 30px;
+    margin: 3% 20%;
+  
+    box-shadow:var(--shadow)
+  
+  }
+
+  
+.general{
+    max-width: 60vw;
+    padding: 30px;
+    margin: 1% 11%;
+    color: rgb(138, 133, 133);
+  
+  }
+
+  .column_one, .column_two , .column_three{
+    margin-right: 19%
+  }
+ 
+
+  .collapsible {
+    /* background-color: #193772; */
+    /* color: white; */
+    border: 1px solid #b9b9b9;
+    cursor: pointer;
+    padding: 15px;
+    width: 80%;
+    /* border: none; */
+    text-align: left;
+    outline: none;
+   /* font-size: 15px;*/
+    border-radius: 4px;
+  }
+  .active, .collapsible:hover {
+    background-color: lightgrey;
+  }
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-top:10px;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: rgb(161, 158, 158);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.userUpdateInput{
+  width: 50%;
+}
+
+.userUpdateImg{
+  width: 68px;
+  height: 68px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 20px;
+  border:none;
+}
+
+.addProductItem > select {
+  padding: 10px;
+  border: 0.7px solid darkgrey;
+}
